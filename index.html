@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Mina Emil Mitry profile</title>
+<style>
+
+.container{
+display:grid;
+border:2px sold blue;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows:1fr 1fr 1fr;
+grid-template-areas:"hd hd hd"
+                    "sld sld sld"
+                    "footer footer footer";
+justify-content: center;
+
+}
+
+.box
+{
+display:flex;
+padding: 5px;
+align-items: center;
+background-color: burlywood;
+}
+
+.box1
+{
+display:flex;
+padding: 5px;
+align-items: center;
+grid-area: 2/2/3/3;
+align-self: center;
+text-align: center;
+justify-self: center;
+font-size: 20px;
+}
+.Bhead
+{
+grid-area:1/1/2/4;
+border:2px yallow;
+align-self: center;
+}
+
+.Bfooter
+{
+grid-area:3/1/4/4;
+border:2px yallow;
+align-self: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="box Bhead"><h2>Mina Emil Mitry</h2></div>
+<div class="box box1">
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn ON</button>
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn OFF</button>
+</div>
+<div class="box Bfooter"><a href="https://github.com/mena-matry/MyProfile">mena2day@gmail.com</a></div>
+</div>
+</body>
+</html>
+
